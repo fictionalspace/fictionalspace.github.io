@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #b3b3ff;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 1600px; /* only for demonstration, should be removed */
+  background: #e0ebeb;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #ffffff;
+  height: 1600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #E6E6FA;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+<img src="flowersbook.jpg" alt="Flowers Book"style="width:965px;height:425px;">
+  <h2 style="font-family:sans-serif;">Petals dance for our valediction</h2>
+</header>
+
+<section>
+  <nav>
+    
+      <iframe width="350" height="197" src="https://www.youtube.com/embed/Le5nXTvNYJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+	<img src="Flower_Petals.png" alt="flower petals" style="width:512px;height:270px;">
+	<img src="petals.png" alt="flower petals" style="width:546px;height:288px;">
+  </nav>
+  
+  <article>
+    <h1>Silently chase away your worries</h1>
+	<img src="calla_carn_daisy.jpg" alt="Calla Lily, Carnation, Daisy"style="width:600px;height:192px;"> 
+	
+    <p>Please don't leave me behind, leave me behind</p>
+	<img src="chrys_kalan.jpg" alt="Chrysanthemum, Kalanchoe"style="width:636px;height:218px;">
+    
+	<p>Aroma drags me out of where I was</p>
+	<img src="Lisianthus.jfif" alt="Lisianthus"> 
+	
+	<p>Construct the map that helps me trace your steps</p>
+	<img src="rose_star_iris.jpg" alt="Cream rose, stargazer, iris"style="width:720px;height:192px;">
+	<p>Take me to where our souls may live in peace</p>
+	
+	<img src="Flower_Petals.png" alt="flower petals" style="width:512px;height:270px;">
+	<p>                                                 </p>
+	<img src="flowerbook.jfif" alt="flowerbook"style="width:334px;height:192px;">
+  </article>
+</section>
+
+<footer>
+  <p style="font-family:sans-serif;">And softly merge into the sky</p>
+  <a href="index.html">Back to the beginning?</a>
+  <a href="Tunes.html">Or somewhere deeper?</a>
+  
+</footer>
+
+</body>
+</html>
+
