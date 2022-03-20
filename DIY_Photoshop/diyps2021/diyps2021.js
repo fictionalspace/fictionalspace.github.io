@@ -9,6 +9,7 @@ function preload() {
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
 // you can link to an image on your github account
   img = loadImage('https://fictionalspace.github.io/petals.png');
+  img2 = loadImage('https://fictionalspace.github.io/DIY_Photoshop/diyps2021/waterdrop.png');
 }
 
 function setup() {
@@ -89,6 +90,10 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
     image(img, mouseX, mouseY);
     
+   } else if (toolChoice == 'h' || toolChoice == 'H') { // g places the image we pre-loaded
+    image(img2, mouseX, mouseY);
+  
+
   }
  }
  
