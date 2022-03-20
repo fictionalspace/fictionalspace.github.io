@@ -39,24 +39,21 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     line(mouseX, mouseY, pmouseX, pmouseY);
     
   } else if (toolChoice == '2') { // second tool
-    noStroke();
-    //stroke(20);
-    //line(mouseX, mouseY, pmouseX, pmouseY);
-     quad(mouseX, mouseY, mouseX+90, 150, mouseX+75, mouseY+200, mouseX+200, 100);
-     fill(random(255,0,0,10), random(255,0,0,10), random(255,0,0,10), random(255,0,0,10),
-     random(255,0,0,10), random(255,0,0,10), random(255,0,0,10), random(255,0,0,10));
+    stroke(184, 238, 255);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+     
   } else if (toolChoice == '3') { // third tool
-
     stroke(1000, 500, 0, 80);
     line(mouseX, mouseY, pmouseX, pmouseY);
+    
   } else if (toolChoice == '4') {
 
-    stroke(200, 100, 255);
+    stroke(255, 171, 245);
     line(mouseX, mouseY, pmouseX, pmouseY);
   } else if (key == '5') { // this tool calls a function
-    stroke(0, 0, 255);
-    testbox(20, 20, 200);
-    testbox(200, 20, 20);
+    
+    triangle(mouseX=60, mouseY, pmouseX, pmouseY=90, mouseX, 100);
+    
     
  // make testbox do something!
  //   line(mouseX, mouseY, pmouseX, pmouseY);
@@ -77,16 +74,19 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     triangle(mouseX=57, mouseY=90, pmouseX, pmouseY, mouseX=86, mouseY=75); //interesting
   } else if (toolChoice == '8') {
 
-    fill(300, 100, 0, 80);
+    fill(60, 17, 112, 20);
     rect(mouseX, mouseY, 20, 20);
   } else if (toolChoice == '9') {
 
-    fill(300, 100, 0, 80);
-    rect(mouseX, mouseY, 40, 40);
+    fill(29, 42, 92, 20);
+    //rect(mouseX, mouseY, 40, 40);
+    //triangle(mouseX, mouseX=20, mouseY, pmouseY, mouseX, mouseY);
+    ellipse(mouseX, mouseY, 90, 45);
   } else if (toolChoice == '0') {
-    stroke(0, 0);
-    fill(random(255), random(255), random(255), random(255));
-    rect(mouseX, mouseY, 200, 150);
+     noStroke();
+     quad(mouseX, mouseY, mouseX+90, 150, mouseX+75, mouseY+200, mouseX+200, 100);
+     fill(random(255,0,0,10), random(255,0,0,10), random(255,0,0,10), random(255,0,0,10),
+     random(255,0,0,10), random(255,0,0,10), random(255,0,0,10), random(255,0,0,10));
   } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
     image(img, mouseX, mouseY);
     
