@@ -1,37 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>DIY Photoshop</title>
- <!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<head>
-
-<h1>DIY Photoshop</h1>
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
- <ul class="navbar-nav">
- 	<li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
-	<li class="nav-item"><a class="nav-link" href="glitchart.html">glitch art</a></li>
-	<li class="nav-item"><a class="nav-link" href="mememashup.html">meme</a></li>
-    <li class="nav-item"><a class="nav-link" href="diyphotoshop.html">diy photoshop</a></li>
-</ul> 
-</nav>
-<p>created with coding</p>
-
-<iframe src="https://fictionalspace.github.io/DIY_Photoshop/diyps2021/index.html" height="750" width="800" title="description"></iframe>
-<body>
-<p>Here's the key chart <br> 1 - black line <br> 2 - sky blue line <br> 3 - yellow line 
-<br> 4 - pink line <br> 5 - diamond triangle in the sky <br> 6 - dark shade ellipses <br> 
-7 - sunlight <br> 8 - faded purple squares <br> 9 - faded dark oval ellipses <br> 
-0 -random quards <br> g/G - faded flower petal brush (very faint, so hold the mouse for a bit to see the petal brush then slowly drag the brush around) <br> h/H - water mist brush 
-<br x/X - restart</p>
-<pre>
 var img;
-var initials ='jm'; // your initials
+var initials ='hf'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 250; // off white background
 var lastscreenshot=61; // last screenshot never taken
@@ -45,7 +13,7 @@ function preload() {
 }
 
 function setup() {
-createCanvas(600, 400);  // canvas size
+createCanvas(800, 750);  // canvas size
 background(screenbg);   // use our background screen color
 
 }
@@ -160,6 +128,3 @@ function saveme(){
   lastscreenshot=second(); // set this to the current second so no more than one per second
   
 }
-</pre>
-</body>
-</html>
