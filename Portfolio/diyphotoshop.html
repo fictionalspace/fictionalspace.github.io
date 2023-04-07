@@ -5,6 +5,21 @@
     h1 {
       border: 2px solid rgb(0, 0, 0);
     }
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
     </style>
 <title>DIY Photoshop</title>
  <!-- Latest compiled and minified CSS -->
@@ -29,146 +44,76 @@
 	<li class="nav-item"><a class="nav-link" href="final.html">Final</a></li>
 </ul> 
 </nav>
-<p>created with coding</p>
+
 
 <iframe src="https://fictionalspace.github.io/DIY_Photoshop/diyps2021/index.html" height="750" width="800" title="description"></iframe>
 <body>
-<p>Here's the key chart <br> 1 - black line <br> 2 - sky blue line <br> 3 - yellow line 
-<br> 4 - pink line <br> 5 - diamond triangle in the sky <br> 6 - dark shade ellipses <br> 
-7 - sunlight <br> 8 - faded purple squares <br> 9 - faded dark oval ellipses <br> 
-0 -random quards <br> g/G - faded flower petal brush (very faint, so hold the mouse for a bit to see the petal brush then slowly drag the brush around) <br> h/H - water mist brush 
-<br x/X - restart</p>
-<pre>
-var img;
-var initials ='jm'; // your initials
-var choice = '1'; // starting choice, so it is not empty
-var screenbg = 250; // off white background
-var lastscreenshot=61; // last screenshot never taken
 
-function preload() {
-// preload() runs once, it may make you wait
-//  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
-// you can link to an image on your github account
-  img = loadImage('https://fictionalspace.github.io/petals.png');
-  img2 = loadImage('https://fictionalspace.github.io/DIY_Photoshop/diyps2021/waterdrop.png');
-}
+<table>
+  <tr>
+    <th><center>Key Table Hints </center></th>
+  </tr>
+  <tr>
+    <th>Keybind</th>
+    <th>Tool/Brushes</th>
+  </tr>
 
-function setup() {
-createCanvas(600, 400);  // canvas size
-background(screenbg);   // use our background screen color
+  <tr>
+    <th>1</th>
+    <th>Black Line</th>
+  </tr>
 
-}
+  <tr>
+    <th>2</th>
+    <th>Sky Blue Line</th>
+  </tr>
 
-function draw() {
-  if (keyIsPressed) {
-    choice = key; // set choice to the key that was pressed
-    clear_print(); // check to see if it is clear screen or save image
-  }
-  if (mouseIsPressed){
-    newkeyChoice(choice);  // if the mouse is pressed call newkeyChoice
-  }
-}
-
-function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
-  // the key mapping if statements that you can change to do anything you want.
-  // just make sure each key option has the a stroke or fill and then what type of 
-  // graphic function
-
- if (toolChoice == '1' ) {  // first tool
-   
-    stroke(01);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-    
-  } else if (toolChoice == '2') { // second tool
-    stroke(184, 238, 255);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-     
-  } else if (toolChoice == '3') { // third tool
-    stroke(1000, 500, 0, 80);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-    
-  } else if (toolChoice == '4') {
-
-    stroke(255, 171, 245);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (key == '5') { // this tool calls a function
-    
-    triangle(mouseX=60, mouseY, pmouseX, pmouseY=90, mouseX, 100);
-    
-    
- // make testbox do something!
- //   line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '4') {
-    
-  } else if (toolChoice == '6') {
-
-    stroke(200);
-    //line(mouseX, mouseY, pmouseX, pmouseY);
-    fill(0,102);
-    noStroke();
-    ellipse(mouseX, mouseY, 5,20);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '7') {
-
-    fill(254, 255, 227, 20);
-    rect(mouseX, mouseY, 20, 20);
-    triangle(mouseX=57, mouseY=90, pmouseX, pmouseY, mouseX=86, mouseY=75); //interesting
-  } else if (toolChoice == '8') {
-
-    fill(60, 17, 112, 20);
-    rect(mouseX, mouseY, 20, 20);
-  } else if (toolChoice == '9') {
-
-    fill(29, 42, 92, 20);
-    //rect(mouseX, mouseY, 40, 40);
-    //triangle(mouseX, mouseX=20, mouseY, pmouseY, mouseX, mouseY);
-    ellipse(mouseX, mouseY, 90, 45);
-  } else if (toolChoice == '0') {
-     noStroke();
-     quad(mouseX, mouseY, mouseX+90, 150, mouseX+75, mouseY+200, mouseX+200, 100);
-     fill(random(255,0,0,10), random(255,0,0,10), random(255,0,0,10), random(255,0,0,10),
-     random(255,0,0,10), random(255,0,0,10), random(255,0,0,10), random(255,0,0,10));
-  } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
-    image(img, mouseX, mouseY);
-    
-   } else if (toolChoice == 'h' || toolChoice == 'H') { // g places the image we pre-loaded
-    image(img2, mouseX, mouseY);
+  <tr>
+    <th>3</th>
+    <th>Yellow Line</th>
+  </tr>
   
+  <tr>
+    <th>4</th>
+    <th>Pink Line</th>
+  </tr>
 
-  }
- }
- 
-function testbox(r, g, b) {
-// this is a test function that will show you how you can put your own functions into the sketch
-  x = mouseX;
-  y = mouseY;
-  fill(r, g, b);
-  rect(x-50, y-50, 100, 100);
-  
-   
+  <tr>
+    <th>5</th>
+    <th>Diamond Triangle in the Sky</th>
+  </tr>
 
-}
+  <tr>
+    <th>6</th>
+    <th>Dark Shade Ellipses</th>
+  </tr>
 
-function clear_print() {
-// this will do one of two things, x clears the screen by resetting the background
-// p calls the routine saveme, which saves a copy of the screen
-  if (key == 'x' || key == 'X') {
-    background(screenbg); // set the screen back to the background color
-  } else if (key == 'p' || key == 'P') {
-     saveme();  // call saveme which saves an image of the screen
-  }
-}
+  <tr>
+    <th>7</th>
+    <th>Sunlight</th>
+  </tr>
 
-function saveme(){
-    //this will save the name as the intials, date, time and a millis counting number.
-    // it will always be larger in value then the last one.
-  filename=initials+day() + hour() + minute() +second();
-  if (second()!=lastscreenshot) { // don't take a screenshot if you just took one
-    saveCanvas(filename, 'jpg');
-  }
-  lastscreenshot=second(); // set this to the current second so no more than one per second
-  
-}
-</pre>
+  <tr>
+    <th>8</th>
+    <th>Faded Purple Sqaures</th>
+  </tr>
+
+  <tr>
+    <th>9</th>
+    <th>Faded Flower Petals</th>
+  </tr>
+
+  <tr>
+    <th>H/h</th>
+    <th>Water Mist</th>
+  </tr>
+
+  <tr>
+    <th>X/x</th>
+    <th>Restart canvas</th>
+  </tr>
+
+
+</table>
 </body>
 </html>
