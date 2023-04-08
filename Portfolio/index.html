@@ -5,6 +5,37 @@
 h1 {
 	border: 2px solid rgb(94, 62, 25);
 }
+* {
+  box-sizing: border-box;
+}
+			#grad1 {
+			height: 200px; 
+			background: linear-gradient(to bottom, rgba(255,0,0,0), rgb(103, 68, 34));
+			}
+			#grad2 {
+			height: 100px; 
+			background: linear-gradient(to top, rgba(255,0,0,0), rgb(148, 115, 82));
+			}
+ div.gallery {
+  margin: 10px;
+  border: 1px solid #4d2611;
+  float: left;
+  width: 300px;
+}
+
+div.gallery:hover {
+  border: 5px solid #C29B6C;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 </style>
 <title>Welcoming Page</title>
 
@@ -18,7 +49,9 @@ h1 {
 
 </head>
 
+<div id="grad2">
 <body style="background-color:#efe1c6d6;">
+</div>
 
 <h1 style = "font-family:helvetica;"> <center> Welcome to Fictionalspace Portfolio  </center> </h1> 
 <nav class="navbar navbar-expand-sm bg-light navbar-light">
@@ -37,89 +70,89 @@ h1 {
 </ul> 
 </nav>
 
+<h2> Feel free to have a look around my work of art pages.</h2>
 
 
 <hr>
 <center>
-
 <img src="selfface.JPG" alt="Self Portrait" 
 style="width:300px;height:300px;">
 <p> Hello, this is my face, my self face at least. </p>
 </center>
 
+<div id="grad2">
+<div class="gallery">
+    <a target="_blank" href="glitchart.html">
+      <img src="glitchart.png" alt="Glitch Art" width="1000" height="1000">
+    </a>
+    <div class="desc">Glitch Art</div>
+</div>
 
-<hr>
-<center>
-<img src="glitchart.png" alt="Glitch Art" 
-style="width:300px;height:185px;">
-<a href="glitchart.html"> Glitch Art </a>
-</center>
+<div class="gallery">
+    <a target="_blank" href="diyphotoshop.html">
+      <img src="diyphoto.png" alt="DIY Photoshop" width="1000" height="1000">
+    </a>
+    <div class="desc">DIY Photoshop</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="netart.html">
+      <img src="library1.jpg" alt="Net Art" width="1000" height="1000">
+    </a>
+    <div class="desc">Net Art</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="3Dart.html">
+      <img src="3Dbefore.jpg" alt="3D Printer Art" width="1000" height="1000">
+    </a>
+    <div class="desc">3D Printer Art</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="final.html">
+      <img src="foragingwoods-mabel-lvl2.1.png" alt="FW Game" width="1000" height="1000">
+    </a>
+    <div class="desc">Foraging Woods</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="catgif.html">
+      <img src="cat_portrait.gif" alt="Cat Gif" width="1000" height="1000">
+    </a>
+    <div class="desc">Cat Gif</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="eggvideo.html">
+      <img src="egg.JPG" alt="Egg Video" width="1000" height="1000">
+    </a>
+    <div class="desc">Egg Video</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="bard.html">
+      <img src="bard_portrait.JPG" alt="Egg Video" width="1000" height="1000">
+    </a>
+    <div class="desc">Bard-acious</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="illustrations.html">
+      <img src="illustrations_portrait.gif" alt="Illustrations Portrait" width="1000" height="1000">
+    </a>
+    <div class="desc">Illustrations</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank" href="gameassets.html">
+      <img src="gameasset_portrait.jpg" alt="Game Asset Portraits" width="1000" height="1000">
+    </a>
+    <div class="desc">Game Assets</div>
+</div>
+</div>
 
 
-<hr>
-<center>
-<img src="diyphoto.png" alt="DIY"
-style="width:300px;height:185px;">
-<a href="diyphotoshop.html">DIY Photoshop</a>
-</center>
-
-<hr>
-<center>
-<img src="library1.jpg" alt="Net Art"
-style="width:300px;height:185px;">
-<a href="netart.html">Net Art</a>
-</center>
-
-<hr>
-<center>
-<img src="3Dbefore.jpg" alt="3D Minecraft Art"
-style="width:300px;height:185px;">
-<a href="3Dart.html">3D Minecraft Art</a>
-</center>
-
-<hr>
-<center>
-<img src="foragingwoods-mabel-lvl2.1.png" alt="Foraging Woods"
-style="width:300px;height:300px;">
-<a href="final.html">Foraging Woods</a>
-</center>
-
-<hr>
-<center>
-<img src="cat_portrait.gif" alt="Cat Portrait"
-style="width:300px;height:300px;">
-<a href="catgif.html">Cat Gif</a>
-</center>
-
-<hr>
-<center>
-<img src="egg.JPG" alt="Egg Portrait"
-style="width:300px;height:300px;">
-<a href="eggvideo.html">Egg Video</a>
-</center>
-
-<hr>
-<center>
-<img src="bard_portrait.JPG" alt="Bard Portrait"
-style="width:300px;height:300px;">
-<a href="bard.html">Bard-acious</a>
-</center>
-
-<hr>
-<center>
-<img src="illustrations_portrait.gif" alt="Illustration Portrait"
-style="width:300px;height:300px;">
-<a href="illustrations.html">Illustrations</a>
-</center>
-
-<hr>
-<center>
-<img src="gameasset_portrait.jpg" alt="Game Portrait"
-style="width:300px;height:300px;">
-<a href="gameassets.html">Final - Foraging Woods</a>
-</center>
-
-<hr>
 
 </body>
 </html>
